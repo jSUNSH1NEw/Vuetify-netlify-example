@@ -1,17 +1,18 @@
 <template>
   <div id="app">
+        <router-view/>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Presented by Lena and Joffrey"/>
+    <Home msg="Presented by Lena and Joffrey"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Home
   }
 }
 </script>
@@ -24,5 +25,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.btn-primary {
+  margin-right: 5px;
 }
 </style>

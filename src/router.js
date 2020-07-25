@@ -12,20 +12,24 @@ export default new Router({
   mode: "history",
   routes: [
     {
-      path: "/",
-      name: "customers",
-      alias: "/customer", // go '/', the URL remains '/', but it wcill be matched if visiting '/customer'
-      component: CustomersList
+      path: '/',
+      name: 'home',
+      component: home
     },
     {
-      path: "/add",
-      name: "add",
-      component: AddCustomer
+      path: '/blog',
+      name: 'blog',
+      component: blog
     },
     {
-      path: "/search",
-      name: "search",
-      component: SearchCustomers
+      path: '/services',
+      name: 'services',
+      component: services
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: contact
     }
   ]
 });

@@ -1,4 +1,8 @@
-# jl project is about a nex artcile from me and Benoit lena for the construction of a vue app with vue Routeur and vuesax component 
+# This is project about a new artcile that i have construct with Lena Benoit
+## for the construction of a vue app with
+ - vue Routeur 
+ - Netlify 
+ - vuesax component 
 
 ## Project setup
 ```

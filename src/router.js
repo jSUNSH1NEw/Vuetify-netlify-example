@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import CustomersList from "./components/CustomersList.vue";
-import AddCustomer from "./components/AddCustomer.vue";
-import SearchCustomers from "./components/SearchCustomers.vue";
+import Home from "./components/Home.vue";
+import Blog from "./components/Blog.vue";
+import Giveme from "./components/Giveme.vue";
+
  
 Vue.use(Router);
  
@@ -14,22 +15,17 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: home
+      component: Home
     },
     {
       path: '/blog',
       name: 'blog',
-      component: blog
+      component: Blog
     },
     {
-      path: '/services',
-      name: 'services',
-      component: services
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: contact
+      path: '/giveme',
+      name: 'giveme',
+      component: Giveme
     }
   ]
 });

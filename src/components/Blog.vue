@@ -1,6 +1,6 @@
 <template>
  <div class="blog">
-  <h1>{{blog}}</h1>
+  <h1>NICE</h1>
  </div>
 </template>
 <script>

@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-        <router-view/>
     <img alt="Vue logo" src="./assets/logo.png">
-    <Home msg="Presented by Lena and Joffrey"/>
+    <NavBar/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Home from './components/Home'
+import NavBar from './components/Navbar'
 
 export default {
   name: 'App',
   components: {
-    Home
+    NavBar,
   }
 }
 </script>

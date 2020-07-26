@@ -1,4 +1,8 @@
-# jl
+# This is project about a new artcile that i have construct with Lena Benoit
+## for the construction of a vue app with
+ - vue Routeur 
+ - Netlify 
+ - vuesax component 
 
 ## Project setup
 ```
@@ -10,15 +14,4 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -11,12 +11,15 @@
           <!-- ...img logo -->
         </template>
 
+
+      <router-link class="btn btn-primary" to="/">
         <vs-sidebar-item id="home">
           <template #icon>
             <i class='bx bx-home'></i>
           </template>
           <router-link class="btn btn-primary" to="/">Home</router-link>
         </vs-sidebar-item>
+        </router-link>
 
         <vs-sidebar-item id="market">
           <template #icon>
@@ -56,21 +59,23 @@
         <vs-sidebar-group>
           <template #header>
 
-            <vs-sidebar-item arrow>
-              <template #icon>
-                <i class='bx bx-code-alt' ></i>
-              </template>
-              Coding
-            </vs-sidebar-item>
+      <vs-sidebar-item arrow>
+        <template #icon>
+          <i class='bx bx-code-alt' ></i>
+        </template>
+                <router-link class="btn btn-primary" to="/coding-menu">Coding</router-link>
+      </vs-sidebar-item>
 
           </template>
 
+          <router-link to="/coding-netlify">
           <vs-sidebar-item id="github">
             <template #icon>
               <i class='bx bxl-github' ></i>
             </template>
-            Github
+            <router-link to="/coding-menu-netlify">Netlify</router-link>
           </vs-sidebar-item>
+          </router-link>
 
           <vs-sidebar-item id="codepen">
             <template #icon>
@@ -87,12 +92,6 @@
             Native
           </vs-sidebar-item>
 
-          <vs-sidebar-item id="git">
-            <template #icon>
-              <i class='bx bxl-git' ></i>
-            </template>
-            Netlify
-          </vs-sidebar-item>
 
         </vs-sidebar-group>
 
@@ -101,7 +100,7 @@
           <template #icon>
             <i class='bx bxs-donate-heart' ></i>
           </template>
-          <router-link class="btn btn-primary" to="/giveme">Donate a coffe</router-link>
+          ²<router-link class="btn btn-primary" to="/giveme">Donate a coffe</router-link>
         </vs-sidebar-item>
 
 
@@ -115,15 +114,7 @@
 
 
         <template #footer>
-          <vs-row justify="space-between">
-            <vs-avatar badge-color="danger" badge-position="top-right">
-              <i class='bx bx-bell' ></i>
-
-              <template #badge>
-                1337
-              </template>
-            </vs-avatar>
-
+          <vs-row justify="center">
             <vs-avatar>
               <img src="/avatars/avatar-5.png" alt="">
             </vs-avatar>
